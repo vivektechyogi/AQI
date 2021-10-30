@@ -1,0 +1,6 @@
+module Pods_AQI {
+  umbrella header "Pods-AQI-umbrella.h"
+
+  export *
+  module * { export * }
+}
