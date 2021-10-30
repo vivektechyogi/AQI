@@ -16,6 +16,9 @@
 		32649BB9272D80DF003EC32B /* AQITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32649BB8272D80DF003EC32B /* AQITests.swift */; };
 		32649BC3272D80DF003EC32B /* AQIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32649BC2272D80DF003EC32B /* AQIUITests.swift */; };
 		32649BC5272D80DF003EC32B /* AQIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32649BC4272D80DF003EC32B /* AQIUITestsLaunchTests.swift */; };
+		32649BD6272D8145003EC32B /* AQIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32649BD5272D8145003EC32B /* AQIModel.swift */; };
+		32649BD8272D8179003EC32B /* AQIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32649BD7272D8179003EC32B /* AQIViewModel.swift */; };
+		32649BDA272D83D6003EC32B /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32649BD9272D83D6003EC32B /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		32649BBE272D80DF003EC32B /* AQIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AQIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32649BC2272D80DF003EC32B /* AQIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIUITests.swift; sourceTree = "<group>"; };
 		32649BC4272D80DF003EC32B /* AQIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		32649BD5272D8145003EC32B /* AQIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIModel.swift; sourceTree = "<group>"; };
+		32649BD7272D8179003EC32B /* AQIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIViewModel.swift; sourceTree = "<group>"; };
+		32649BD9272D83D6003EC32B /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,10 @@
 		32649B95272D80DA003EC32B = {
 			isa = PBXGroup;
 			children = (
+				32649BD4272D812D003EC32B /* Service */,
+				32649BD3272D8124003EC32B /* Controller */,
+				32649BD2272D811A003EC32B /* ModelView */,
+				32649BD1272D810E003EC32B /* Model */,
 				32649BA0272D80DA003EC32B /* AQI */,
 				32649BB7272D80DF003EC32B /* AQITests */,
 				32649BC1272D80DF003EC32B /* AQIUITests */,
@@ -101,7 +111,6 @@
 			children = (
 				32649BA1272D80DA003EC32B /* AppDelegate.swift */,
 				32649BA3272D80DA003EC32B /* SceneDelegate.swift */,
-				32649BA5272D80DA003EC32B /* ViewController.swift */,
 				32649BA7272D80DA003EC32B /* Main.storyboard */,
 				32649BAA272D80DE003EC32B /* Assets.xcassets */,
 				32649BAC272D80DE003EC32B /* LaunchScreen.storyboard */,
@@ -125,6 +134,38 @@
 				32649BC4272D80DF003EC32B /* AQIUITestsLaunchTests.swift */,
 			);
 			path = AQIUITests;
+			sourceTree = "<group>";
+		};
+		32649BD1272D810E003EC32B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32649BD5272D8145003EC32B /* AQIModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32649BD2272D811A003EC32B /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				32649BD7272D8179003EC32B /* AQIViewModel.swift */,
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		32649BD3272D8124003EC32B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				32649BA5272D80DA003EC32B /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		32649BD4272D812D003EC32B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				32649BD9272D83D6003EC32B /* Service.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +300,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				32649BA6272D80DA003EC32B /* ViewController.swift in Sources */,
+				32649BD6272D8145003EC32B /* AQIModel.swift in Sources */,
+				32649BD8272D8179003EC32B /* AQIViewModel.swift in Sources */,
 				32649BA2272D80DA003EC32B /* AppDelegate.swift in Sources */,
 				32649BA4272D80DA003EC32B /* SceneDelegate.swift in Sources */,
+				32649BDA272D83D6003EC32B /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
