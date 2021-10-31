@@ -8,6 +8,7 @@
 import Foundation
 import Starscream
 
+// socket setup and instance
 class Service: NSObject{
     
     static let sharedInstance = Service()

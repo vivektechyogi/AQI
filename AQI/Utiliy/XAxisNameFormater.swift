@@ -8,6 +8,7 @@
 import Foundation
 import  Charts
 
+// formatter clas for xaxis labels
 final class XAxisNameFormater: NSObject, IAxisValueFormatter {
     
     func stringForValue( _ value: Double, axis _: AxisBase?) -> String {

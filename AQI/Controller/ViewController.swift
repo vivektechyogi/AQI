@@ -48,7 +48,7 @@ class ViewController: UIViewController {
                         let aqiViewModel = AQIViewModel(aqiData: aqi, timestamp: Date().timeIntervalSince1970, aqiColor: detailData.color, titleStr: detailData.title, imageStr: detailData.image)
                         self.aqiData.updateValue( aqiViewModel, forKey: aqi.city ?? "")
                         
-                        //check if any city selected
+                        //check if any city selected & check if difference is 30 seconds i.e. 1800 
                         if self.selectedCity == aqi.city ?? "" {
                             if self.graphData.count == 0 || (Date().timeIntervalSince1970 - Array(self.graphData.keys).max()! >= 1800){
                                 self.graphData.updateValue(aqi.aqi ?? 0.0, forKey: Date().timeIntervalSince1970.round(to: 0))
@@ -71,7 +71,7 @@ class ViewController: UIViewController {
                           options: .transitionCrossDissolve,
                           animations: {
             self.chartPopupView.isHidden = true
-                      })
+        })
         selectedCity = ""
         chartView.clear()
         graphData.removeAll()
@@ -114,7 +114,7 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource{
                           options: .transitionCrossDissolve,
                           animations: {
             self.chartPopupView.isHidden = false
-                      })
+        })
         updatePopupView(data:  aqiData[Array(aqiData.keys).sorted()[indexPath.row]]!)
     }
 }
@@ -161,7 +161,7 @@ extension ViewController{
         let data = LineChartData() //This is the object that will be added to the chart
         data.addDataSet(line1) //Adds the line to the dataSet
         chartView.data = data //finally - it adds the chart data to the chart and causes an
-
+        
         chartView.chartDescription?.text = "Realtime AQI for city: \(selectedCity)" // Here we set the description for the graph
         chartView.xAxis.valueFormatter = XAxisNameFormater()
         
