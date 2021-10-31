@@ -6,15 +6,22 @@
 //
 
 import Foundation
+import UIKit
 
 class AQIViewModel: Codable {
     let city: String?
     let aqi: Double?
     let timestamp: Double?
+    let aqiColor: String?
+    let titleStr: String?
+    let imageStr: String?
 
-    init(aqi: AQIModel, timestamp:Double) {
-        self.city = aqi.city
-        self.aqi = aqi.aqi
+    init(aqiData: AQIModel, timestamp:Double, aqiColor:String, titleStr: String, imageStr: String ) {
+        self.city = aqiData.city
+        self.aqi = aqiData.aqi
         self.timestamp = timestamp
+        self.aqiColor = aqiColor
+        self.titleStr = titleStr
+        self.imageStr = imageStr
     }
 }

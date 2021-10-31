@@ -4,5 +4,6 @@
 target 'AQI' do
 
 pod 'Starscream', '~> 4.0.0'
+pod 'Charts'
 
 end
