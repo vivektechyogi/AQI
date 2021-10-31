@@ -21,6 +21,7 @@
 		32649BDA272D83D6003EC32B /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32649BD9272D83D6003EC32B /* Service.swift */; };
 		32649BDD272D8DAF003EC32B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32649BDC272D8DAF003EC32B /* Extension.swift */; };
 		32649BE0272D9FA8003EC32B /* AQITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32649BDF272D9FA8003EC32B /* AQITableViewCell.swift */; };
+		32D6C16B272EC38A00E353B0 /* XAxisNameFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D6C16A272EC38A00E353B0 /* XAxisNameFormater.swift */; };
 		6DCBA6AF4497835C78181FA0 /* libPods-AQI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC3F46A27F950AEE92EE768 /* libPods-AQI.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		32649BD9272D83D6003EC32B /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		32649BDC272D8DAF003EC32B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		32649BDF272D9FA8003EC32B /* AQITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQITableViewCell.swift; sourceTree = "<group>"; };
+		32D6C16A272EC38A00E353B0 /* XAxisNameFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAxisNameFormater.swift; sourceTree = "<group>"; };
 		4EB8BCECF80AA1A2A687879C /* Pods-AQI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQI.debug.xcconfig"; path = "Target Support Files/Pods-AQI/Pods-AQI.debug.xcconfig"; sourceTree = "<group>"; };
 		845D8A0FC030E04D30241912 /* Pods-AQI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQI.release.xcconfig"; path = "Target Support Files/Pods-AQI/Pods-AQI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,12 +118,12 @@
 		32649BA0272D80DA003EC32B /* AQI */ = {
 			isa = PBXGroup;
 			children = (
+				32649BD1272D810E003EC32B /* Model */,
 				32649BDE272D9F81003EC32B /* View */,
+				32649BD2272D811A003EC32B /* ViewModel */,
+				32649BD3272D8124003EC32B /* Controller */,
 				32649BDB272D8DA1003EC32B /* Utiliy */,
 				32649BD4272D812D003EC32B /* Service */,
-				32649BD3272D8124003EC32B /* Controller */,
-				32649BD2272D811A003EC32B /* ModelView */,
-				32649BD1272D810E003EC32B /* Model */,
 				32649BA1272D80DA003EC32B /* AppDelegate.swift */,
 				32649BA3272D80DA003EC32B /* SceneDelegate.swift */,
 				32649BA7272D80DA003EC32B /* Main.storyboard */,
@@ -157,12 +159,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		32649BD2272D811A003EC32B /* ModelView */ = {
+		32649BD2272D811A003EC32B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				32649BD7272D8179003EC32B /* AQIViewModel.swift */,
 			);
-			path = ModelView;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		32649BD3272D8124003EC32B /* Controller */ = {
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				32649BDC272D8DAF003EC32B /* Extension.swift */,
+				32D6C16A272EC38A00E353B0 /* XAxisNameFormater.swift */,
 			);
 			path = Utiliy;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				32649BA2272D80DA003EC32B /* AppDelegate.swift in Sources */,
 				32649BA4272D80DA003EC32B /* SceneDelegate.swift in Sources */,
 				32649BDA272D83D6003EC32B /* Service.swift in Sources */,
+				32D6C16B272EC38A00E353B0 /* XAxisNameFormater.swift in Sources */,
 				32649BE0272D9FA8003EC32B /* AQITableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

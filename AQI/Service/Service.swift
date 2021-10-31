@@ -29,7 +29,6 @@ class Service: NSObject{
             case .text(let text):
                let aqis =  [AQIModel].map(JSONString: text)
                 completion(aqis, nil)
-//                print("received text: \(aqis?.count) \(aqis?.last?.city) \(text)")
             case .binary(let data):
               print("received data: \(data)")
             case .pong(let pongData):
@@ -48,6 +47,7 @@ class Service: NSObject{
         }
     }
         
+    
     func stopSocket(){
         if let _ = socket{
             socket.disconnect()

@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+//MARK: Decodable Extension
 
 extension Decodable {
     static func map(JSONString:String) -> Self? {
@@ -22,12 +23,16 @@ extension Decodable {
     }
 }
 
+//MARK: Double Extension
+
 extension Double {
     func round(to places: Int) -> Double {
         let divisor = pow(10.0, Double(places))
         return (self * divisor).rounded() / divisor
     }
 }
+
+//MARK: UIColor Extension
 
 extension UIColor {
     convenience init(hex: String) {
@@ -49,6 +54,7 @@ extension UIColor {
     }
 }
 
+//MARK: UIView Extension
 
 extension UIView {
     
@@ -65,6 +71,8 @@ extension UIView {
         layer.shadowRadius = shadowRadius
     }
 }
+
+//MARK: Date Extension
 
 extension Date {
 
