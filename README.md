@@ -13,10 +13,12 @@ AQI is a leight-weight app to monitor realtime air quality index for india citie
 ![walkthrough gif](https://github.com/vivektechyogi/AQI/blob/main/assets/walkthrough.gif)
 
 # App Screens
-![Alt text](https://github.com/vivektechyogi/AQI/blob/main/assets/screen%201.png "Screen 1")
-![Alt text](https://github.com/vivektechyogi/AQI/blob/main/assets/screen%202.png "Screen 3")
-![Alt text](https://github.com/vivektechyogi/AQI/blob/main/assets/screen%203.png "Screen 3")
 
+
+
+Screen 1             |  Screen 2 |  Screen 3
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/vivektechyogi/AQI/blob/main/assets/screen%201.png "Screen 1")  |  ![](https://github.com/vivektechyogi/AQI/blob/main/assets/screen%202.png "Screen 3") | ![](https://github.com/vivektechyogi/AQI/blob/main/assets/screen%203.png "Screen 3")
 
 
 ## External Library Used:
